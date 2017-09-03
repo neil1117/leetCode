@@ -20,7 +20,6 @@ class Solution {
     
     func go(_ numRows: Int) -> [[Int]] {
         resultArray.append([1])
-        
         for i in 2 ... numRows {
             var array:[Int] = [1]
             for j in 1 ..< i {
@@ -33,7 +32,6 @@ class Solution {
             }
             resultArray.append(array)
         }
-        
         return resultArray
     }
 }
